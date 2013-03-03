@@ -1,0 +1,37 @@
+<%= form_for(@nhan_vien) do |f| %>
+  <% if @nhan_vien.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nhan_vien.errors.count, "error") %> prohibited this nhan_vien from being saved:</h2>
+
+      <ul>
+      <% @nhan_vien.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :MaNV %><br />
+    <%= f.number_field :MaNV %>
+  </div>
+  <div class="field">
+    <%= f.label :TenNV %><br />
+    <%= f.text_field :TenNV %>
+  </div>
+  <div class="field">
+    <%= f.label :ChucVu %><br />
+    <%= f.text_field :ChucVu %>
+  </div>
+  <div class="field">
+    <%= f.label :TaiKhoan %><br />
+    <%= f.text_field :TaiKhoan %>
+  </div>
+  <div class="field">
+    <%= f.label :MatKhau %><br />
+    <%= f.text_field :MatKhau %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

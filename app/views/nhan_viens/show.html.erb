@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Manv:</b>
+  <%= @nhan_vien.MaNV %>
+</p>
+
+<p>
+  <b>Tennv:</b>
+  <%= @nhan_vien.TenNV %>
+</p>
+
+<p>
+  <b>Chucvu:</b>
+  <%= @nhan_vien.ChucVu %>
+</p>
+
+<p>
+  <b>Taikhoan:</b>
+  <%= @nhan_vien.TaiKhoan %>
+</p>
+
+<p>
+  <b>Matkhau:</b>
+  <%= @nhan_vien.MatKhau %>
+</p>
+
+
+<%= link_to 'Edit', edit_nhan_vien_path(@nhan_vien) %> |
+<%= link_to 'Back', nhan_viens_path %>

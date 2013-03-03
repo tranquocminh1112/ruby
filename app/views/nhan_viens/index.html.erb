@@ -1,0 +1,31 @@
+<h1>Listing nhan_viens</h1>
+
+<table>
+  <tr>
+    <th>Manv</th>
+    <th>Tennv</th>
+    <th>Chucvu</th>
+    <th>Taikhoan</th>
+    <th>Matkhau</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nhan_viens.each do |nhan_vien| %>
+  <tr>
+    <td><%= nhan_vien.MaNV %></td>
+    <td><%= nhan_vien.TenNV %></td>
+    <td><%= nhan_vien.ChucVu %></td>
+    <td><%= nhan_vien.TaiKhoan %></td>
+    <td><%= nhan_vien.MatKhau %></td>
+    <td><%= link_to 'Show', nhan_vien %></td>
+    <td><%= link_to 'Edit', edit_nhan_vien_path(nhan_vien) %></td>
+    <td><%= link_to 'Destroy', nhan_vien, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nhan vien', new_nhan_vien_path %>

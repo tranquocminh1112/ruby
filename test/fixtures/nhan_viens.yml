@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  MaNV: 1
+  TenNV: MyString
+  ChucVu: MyString
+  TaiKhoan: MyString
+  MatKhau: MyString
+
+two:
+  MaNV: 1
+  TenNV: MyString
+  ChucVu: MyString
+  TaiKhoan: MyString
+  MatKhau: MyString
